@@ -1,7 +1,8 @@
 {
     "name": "protonemedia/laravel-form-components",
     "description": "Blade components to rapidly build forms with Tailwind CSS Custom Forms and Bootstrap 4.",
-    "keywords": [
+    "keywords":
+    [
         "protonemedia",
         "tailwind",
         "tailwindcss",
@@ -21,19 +22,22 @@
     "homepage": "https://github.com/protonemedia/laravel-form-components",
     "license": "MIT",
     "type": "library",
-    "authors": [
+    "authors":
+    [
         {
             "name": "Pascal Baljet",
             "email": "pascal@protone.media",
             "role": "Developer"
         }
     ],
-    "require": {
+    "require":
+    {
         "php": "^8.1 || ^8.2 || ^8.3 || ^8.4",
         "illuminate/support": "^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0",
-        "symfony/http-foundation": "^6.0"
+        "symfony/http-foundation": "^6.0 || ^7.0"
     },
-    "require-dev": {
+    "require-dev":
+    {
         "livewire/livewire": "^2",
         "mockery/mockery": "^1",
         "nesbot/carbon": "^2",
@@ -42,28 +46,37 @@
         "spatie/laravel-translatable": "^6",
         "symfony/dom-crawler": "^6"
     },
-    "autoload": {
-        "psr-4": {
+    "autoload":
+    {
+        "psr-4":
+        {
             "ProtoneMedia\\LaravelFormComponents\\": "src"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
+    "autoload-dev":
+    {
+        "psr-4":
+        {
             "ProtoneMedia\\LaravelFormComponents\\Tests\\": "tests"
         }
     },
-    "scripts": {
+    "scripts":
+    {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
-    "config": {
+    "config":
+    {
         "sort-packages": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "extra": {
-        "laravel": {
-            "providers": [
+    "extra":
+    {
+        "laravel":
+        {
+            "providers":
+            [
                 "ProtoneMedia\\LaravelFormComponents\\Support\\ServiceProvider"
             ]
         }
